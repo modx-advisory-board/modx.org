@@ -30,6 +30,9 @@ header {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
 .wf-btn {
   background-color: #ccc;
   border-radius: 5px;
@@ -81,5 +84,9 @@ body.light a {
 
 .bg-grey {
   background-color: #eee; }
+
+#footerfooter {
+  max-width: 1280px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=app.css.map */
