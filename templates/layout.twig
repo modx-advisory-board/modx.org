@@ -6,12 +6,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}Welcome to MODX.org{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/wireframe/wf.css">
+    <link rel="stylesheet" href="/assets/wireframe/app.css">
 </head>
-<body>
+<body class="light">
+
+<header class="wf-bottom">
+    <div class="logo">
+        <img src="https://modx.com/assets/design/css/images/modx-logo-color.svg" width="200">
+    </div>
+    <nav class="menu">
+        <a href="#">Download</a>
+        <a href="#">Explore MODX</a>
+        <a href="#">Community</a>
+        <a href="#">Get help</a>
+    </nav>
+</header>
 
 {% block container %}
-<div style="background-color: #eee;">
-    <div style="max-width: 900px; margin: 0 auto;">
+<div class="container">
+    <div class="content-container">
         {% block content %}
             <h1>{{ page.title }}</h1>
             <p style="font-size: 1.1em;">{{ page.introduction }}</p>
@@ -19,6 +34,45 @@
     </div>
 </div>
 {% endblock %}
+
+<footer class="">
+    <div class="flex wf-top wf-bottom p-4 bg-grey" style="margin-bottom: 0;">
+        <div class="flex-c-1">
+            <img src="https://modx.com/assets/design/css/images/modx-logo-color.svg" width="200">
+            <a href="https://en.modhost.pro/"><img src="https://en.modhost.pro/assets/components/hoster/img/logo-black@2.png" alt="modhost.pro"></a>
+        </div>
+        <div class="flex-c-1">
+            <h4>Explore MODX</h4>
+            <ul>
+                <li>Multi-site capabilities</li>
+                <li>SEO</li>
+                <li>Extras</li>
+                <li>Security</li>
+            </ul>
+        </div>
+        <div class="flex-c-1">
+            <h4>Community</h4>
+            <ul>
+                <li>Where to go</li>
+                <li>Contribute</li>
+                <li>Around the world</li>
+                <li>MODX Advisory Board</li>
+            </ul>
+        </div>
+        <div class="flex-c-1">
+            <h4>Get Help</h4>
+            <ul>
+                <li>Documentation</li>
+                <li>Forum</li>
+                <li>Community Slack</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex" style="margin-top: 0;">
+        <div class="flex-c-2"><small>MODX is a registered bla bla</small></div>
+        <div class="flex-c-1"><small><a href="#">Privacy</a> <a href="#">Imprint</a></small></div>
+    </div>
+</footer>
 
 </body>
 </html>
