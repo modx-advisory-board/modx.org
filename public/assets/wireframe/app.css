@@ -1,17 +1,20 @@
 .container {
   max-width: 1280px;
   margin: 2em auto 0; }
-  .container > header {
-    display: flex;
-    padding: 2em 0; }
-    .container > header .logo {
-      flex: 1; }
-    .container > header .menu {
-      flex: 2;
-      text-align: right;
-      padding-top: 2em; }
-      .container > header .menu a {
-        padding: 2em; }
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2em 0; }
+  header .logo {
+    flex: 1; }
+  header .menu {
+    flex: 2;
+    text-align: right;
+    padding-top: 2em; }
+    header .menu a {
+      padding: 2em; }
 
 .wf-image {
   background-image: url("imgwf.png");
